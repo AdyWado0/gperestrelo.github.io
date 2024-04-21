@@ -1,9 +1,38 @@
-<html>
- 
-  <body>
-    <h1>Goncalo Perestrelo</h1>
-    <p>Welcome to my website!</p>
-    <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-  </body>
- 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="./main.js"></script>
+</head>
+<body>
+    <div class="displayNumbers">
+        <input type="text" name="num2" id="display" readonly> <br>
+        <input type="text" name="num1" id="num1" onkeypress="return isNumberKey(this, event);" autofocus> 
+    </div>   
+    <div class="">
+        <button id="btnMultiply" onclick="multiply()">x</button>
+        <button id="btnDivide" onclick="divide()">/</button>
+        <button id="btnSum" onclick="sum()">+</button>
+        <button id="btnMinus" onclick="minus()">-</button>
+        <br>
+        <button id="btnNo1" class="numbers">1</button>
+        <button id="btnNo2" class="numbers">2</button>
+        <button id="btnNo3" class="numbers">3</button>
+        <br>
+        <button id="btnNo4" class="numbers">4</button>
+        <button id="btnNo5" class="numbers">5</button>
+        <button id="btnNo6" class="numbers">6</button>
+        <br>
+        <button id="btnNo7" class="numbers">7</button>
+        <button id="btnNo8" class="numbers">8</button>
+        <button id="btnNo9" class="numbers">9</button>
+        <br>
+        <button id="btnNo0" class="numbers">0</button>
+        <button id="btnEqual" class="numbers">=</button>
+        <button id="btnClear" onclick="clear()">CE</button>
+    </div>
+    
+</body>
+
 </html>
