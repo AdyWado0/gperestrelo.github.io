@@ -36,14 +36,14 @@ function multiply()
     }
     else if (display.value == "")
     {
-        display.value = num1.value;
+        display.value = Math.floor(num1.value);
         num1.value = "";
 
     num1.autofocus = true;
     }
     else
     {
-        display.value = numTotal;
+        display.value = Math.floor(numTotal);
         num1.value = "";
 
     
