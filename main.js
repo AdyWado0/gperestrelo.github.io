@@ -30,7 +30,7 @@ function multiply()
     
     if(num1.value == "")
     {
-        alert('Error','You need to insert a value');
+        alert('You need to insert a value');
 
     num1.autofocus = true;
     }
