@@ -82,7 +82,7 @@ function sum()
 {
     let num1 = document.getElementById("num");
     let display = document.getElementById("displayResult");
-    let numTotal = display.value + num1.value;
+    let numTotal = parseFloat(display.value) + parseFloat(num1.value);
     
     if(num1.value == "")
     {
