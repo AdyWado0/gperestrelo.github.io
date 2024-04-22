@@ -1,4 +1,6 @@
 #displayResult {
     border: none;
-    outline: none;
+}
+#displayResult:active{
+    outline:none;
 }
