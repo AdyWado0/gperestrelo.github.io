@@ -126,14 +126,7 @@ function minus()
 
 function display(value) { 
     let num = document.getElementById("num");
-    if (num.value.includes('.')) 
-    {
-        num.value += ""
-    }
-    else
-    {
-        num.value += value
-    }
+    num.value += value
 
     document.getElementById("num").focus()
 } 
@@ -146,3 +139,16 @@ function clr() {
 function txtFocus(){
     document.getElementById("num").focus()
 }
+function dot(value) { 
+    let num = document.getElementById("num");
+    if (num.value.includes('.')) 
+    {
+        num.value += ""
+    }
+    else
+    {
+        num.value += value
+    }
+
+    document.getElementById("num").focus()
+} 
