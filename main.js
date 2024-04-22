@@ -24,8 +24,8 @@ function isNumberKey(txt, evt) {
 
 function multiply()
 {
-    let num1 = document.getElementById("num1");
-    let display = document.getElementById("display");
+    let num1 = document.getElementById("num");
+    let display = document.getElementById("displayResult");
     let numTotal = display.value * num1.value;
     
     if(num1.value == "")
@@ -53,8 +53,8 @@ function multiply()
 
 function divide()
 {
-    let num1 = document.getElementById("num1");
-    let display = document.getElementById("display");
+    let num1 = document.getElementById("num");
+    let display = document.getElementById("displayResult");
     let numTotal = display.value / num1.value;
     
     if(num1.value == "")
@@ -80,8 +80,8 @@ function divide()
 
 function sum()
 {
-    let num1 = document.getElementById("num1");
-    let display = document.getElementById("display");
+    let num1 = document.getElementById("num");
+    let display = document.getElementById("displayResult");
     let numTotal = display.value + num1.value;
     
     if(num1.value == "")
@@ -103,8 +103,8 @@ function sum()
 
 function minus()
 {
-    let num1 = document.getElementById("num1");
-    let display = document.getElementById("display");
+    let num1 = document.getElementById("num");
+    let display = document.getElementById("displayResult");
     let numTotal = display.value - num1.value;
     
     if(num1 == "")
@@ -124,13 +124,17 @@ function minus()
     num1.focus();
 }
 
+function display(value) { 
+    document.getElementById("num").value += value 
+} 
 
-function clear()
-{
-    document.getElementById("num1").value = "";
+function clr() { 
+    document.getElementById("displayResult").value = "" 
+    document.getElementById("num").value = "" 
 }
 
-function numbers()
-{
-    if(document.getElementsByClassName('numbers').)
-}
+// function solve() { 
+//     let x = document.getElementById("num").value 
+//     let y = math.evaluate(x) 
+//     document.getElementById("displayResult").value = y 
+// } 
