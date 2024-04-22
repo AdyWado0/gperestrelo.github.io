@@ -132,3 +132,7 @@ function clr() {
     document.getElementById("displayResult").value = "" 
     document.getElementById("num").value = "" 
 }
+
+function txtFocus(){
+    document.getElementsByClassName('numbers').focus();
+}
