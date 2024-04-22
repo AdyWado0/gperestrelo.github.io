@@ -132,9 +132,3 @@ function clr() {
     document.getElementById("displayResult").value = "" 
     document.getElementById("num").value = "" 
 }
-
-// function solve() { 
-//     let x = document.getElementById("num").value 
-//     let y = math.evaluate(x) 
-//     document.getElementById("displayResult").value = y 
-// } 
