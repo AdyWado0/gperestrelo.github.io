@@ -127,10 +127,12 @@ function minus()
 function display(value) { 
     let num = document.getElementById("num");
     num.value += value
-    if (!num.value.includes('.') && but.innerText === '.') 
-    {
-        num.value += "."
-    }
+    // if (!num.value.includes('.') && but.innerText === '.'  && num.value.length) 
+    // {
+    //     num.value += "."
+    // }
+
+    document.getElementById("num").focus()
 } 
 
 function clr() { 
@@ -140,11 +142,4 @@ function clr() {
 
 function txtFocus(){
     document.getElementById("num").focus()
-}
-
-function dot(){
-    let num1 = document.getElementById("num");
-    if (!num1.value.includes('.') && but.innerText === '.' && num1.value.length) {
-        num1.value += "."
-      }
 }
