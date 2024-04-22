@@ -127,7 +127,7 @@ function minus()
 function display(value) { 
     let num = document.getElementById("num");
     num.value += value
-    if (num.value.includes('.') && document.getElementById("dot").innerText === '.'  && num.value.length) 
+    if (num.value.includes('.') && num.value.indexOf('.') === -1  && num.value.length) 
     {
         num.value += "."
     }
