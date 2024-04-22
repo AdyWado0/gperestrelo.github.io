@@ -1,6 +1,7 @@
 #displayResult {
     border: none;
+    text-align: right;
 }
-#displayResult:active{
+#displayResult:focus{
     outline:none;
 }
