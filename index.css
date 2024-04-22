@@ -5,7 +5,7 @@
 #displayResult:focus{
     outline:none;
 }
-.btnOperators button{
+button{
     border-radius: 50px;
     background-color: lightblue;
     size: 30px;
