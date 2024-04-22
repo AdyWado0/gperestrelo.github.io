@@ -127,10 +127,10 @@ function minus()
 function display(value) { 
     let num = document.getElementById("num");
     num.value += value
-    // if (!num.value.includes('.') && but.innerText === '.'  && num.value.length) 
-    // {
-    //     num.value += "."
-    // }
+    if (num.value.includes('.') && document.getElementById("dot").innerText === '.'  && num.value.length) 
+    {
+        num.value += "."
+    }
 
     document.getElementById("num").focus()
 } 
