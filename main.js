@@ -134,5 +134,5 @@ function clr() {
 }
 
 function txtFocus(){
-    document.getElementsByClassName('numbers').addEventListener('click',focus());
+    document.getElementById("num").focus()
 }
