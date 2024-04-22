@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <script src="./main.js"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div id="calculator">
@@ -14,7 +15,7 @@
         </div>   
         <div class="buttons">
             <br>
-            <button class="numbers" onclick="display('1')">1</button>
+            <button class="numbers" onclick="display('1'); txtFocus()">1</button>
             <button class="numbers" onclick="display('2')" onkeypress="txtFocus()">2</button>
             <button class="numbers" onclick="display('3')" onkeypress="txtFocus()">3</button>
             <button id="btnMultiply" onclick="multiply()">x</button>
