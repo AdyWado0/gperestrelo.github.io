@@ -125,7 +125,12 @@ function minus()
 }
 
 function display(value) { 
-    document.getElementById("num").value += value 
+    let num = document.getElementById("num");
+    num.value += value
+    if (!num.value.includes('.') && but.innerText === '.') 
+    {
+        num.value += "."
+    }
 } 
 
 function clr() { 
