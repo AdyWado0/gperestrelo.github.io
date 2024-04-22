@@ -6,33 +6,36 @@
     <script src="./main.js"></script>
 </head>
 <body>
-    <div class="displayNumbers">
-        <input type="text" name="num2" id="display" readonly> <br>
-        <input type="text" name="num1" id="num1" onkeypress="return isNumberKey(this, event);" autofocus> 
-    </div>   
-    <div class="">
-        <button id="btnMultiply" onclick="multiply()">x</button>
-        <button id="btnDivide" onclick="divide()">/</button>
-        <button id="btnSum" onclick="sum()">+</button>
-        <button id="btnMinus" onclick="minus()">-</button>
-        <br>
-        <button id="btnNo1" class="numbers">1</button>
-        <button id="btnNo2" class="numbers">2</button>
-        <button id="btnNo3" class="numbers">3</button>
-        <br>
-        <button id="btnNo4" class="numbers">4</button>
-        <button id="btnNo5" class="numbers">5</button>
-        <button id="btnNo6" class="numbers">6</button>
-        <br>
-        <button id="btnNo7" class="numbers">7</button>
-        <button id="btnNo8" class="numbers">8</button>
-        <button id="btnNo9" class="numbers">9</button>
-        <br>
-        <button id="btnNo0" class="numbers">0</button>
-        <button id="btnEqual" class="numbers">=</button>
-        <button id="btnClear" onclick="clear()">CE</button>
-    </div>
-    
+<div id="calculator">
+        <div class="displayNumbers">
+            <input type="text" name="num2" id="displayResult" readonly> 
+            <br>
+            <input type="text" name="num" id="num" onkeypress="return isNumberKey(this, event);" autofocus> 
+        </div>   
+        <div class="buttons">
+            <button id="btnMultiply" onclick="multiply()">x</button>
+            <button id="btnDivide" onclick="divide()">/</button>
+            <button id="btnSum" onclick="sum()">+</button>
+            <button id="btnMinus" onclick="minus()">-</button>
+            <br>
+            <button class="numbers" onclick="display('1')">1</button>
+            <button class="numbers" onclick="display('2')">2</button>
+            <button class="numbers" onclick="display('3')">3</button>
+            <br>
+            <button class="numbers" onclick="display('4')">4</button>
+            <button class="numbers" onclick="display('5')">5</button>
+            <button class="numbers" onclick="display('6')">6</button>
+            <br>
+            <button class="numbers" onclick="display('7')">7</button>
+            <button class="numbers" onclick="display('8')">8</button>
+            <button class="numbers" onclick="display('9')">9</button>
+            <br>
+            <button class="numbers" onclick="display('0')">0</button>
+            <button onclick="clr()">C</button>
+            <!-- <button name="dot" onclick="display('.')">.</button> -->
+            <!-- <button onclick="solve()">=</button> -->
+        </div>
+    </div>  
 </body>
 
 </html>
