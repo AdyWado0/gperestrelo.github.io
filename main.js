@@ -136,3 +136,10 @@ function clr() {
 function txtFocus(){
     document.getElementById("num").focus()
 }
+
+function dot(){
+    let num1 = document.getElementById("num");
+    if (!num1.value.includes('.') && but.innerText === '.' && num1.value.length) {
+        num1.value += "."
+      }
+}
